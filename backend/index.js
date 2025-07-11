@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 // Database Connection With MongoDB
-mongoose.connect("mongodb+srv://greatstack:greatstack123@cluster0.kadym.mongodb.net/e-commerce");
+mongoose.connect("mongodb+srv://greatstack:greatstack123@cluster0.kadym.mongodb.net/");
 
 
 
