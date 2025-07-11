@@ -18,12 +18,12 @@ const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   useEffect(() => {
-    fetch(`${backend_url}/allproducts`)
+    fetch(`${https://sneaker-website-1.onrender.com}/allproducts`)
       .then((res) => res.json())
       .then((data) => setProducts(data))
 
     if (localStorage.getItem("auth-token")) {
-      fetch(`${backend_url}/getcart`, {
+      fetch(`${https://sneaker-website-1.onrender.com}/getcart`, {
         method: 'POST',
         headers: {
           Accept: 'application/form-data',
@@ -70,7 +70,7 @@ const ShopContextProvider = (props) => {
     }
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
     if (localStorage.getItem("auth-token")) {
-      fetch(`${backend_url}/addtocart`, {
+      fetch(`${https://sneaker-website-1.onrender.com}/addtocart`, {
         method: 'POST',
         headers: {
           Accept: 'application/form-data',
@@ -85,7 +85,7 @@ const ShopContextProvider = (props) => {
   const removeFromCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
     if (localStorage.getItem("auth-token")) {
-      fetch(`${backend_url}/removefromcart`, {
+      fetch(`${https://sneaker-website-1.onrender.com}/removefromcart`, {
         method: 'POST',
         headers: {
           Accept: 'application/form-data',
