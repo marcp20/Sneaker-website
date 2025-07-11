@@ -9,6 +9,7 @@ import women_banner from "./Components/Assets/ban3.jpeg";
 import men_banner from "./Components/Assets/ban3.jpeg";
 import kid_banner from "./Components/Assets/ban3.jpeg";
 import LoginSignup from "./Pages/LoginSignup";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 export const backend_url = 'https://sneaker-website-1.onrender.com';
 export const currency = '$';
