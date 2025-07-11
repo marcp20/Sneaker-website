@@ -10,7 +10,7 @@ import men_banner from "./Components/Assets/ban3.jpeg";
 import kid_banner from "./Components/Assets/ban3.jpeg";
 import LoginSignup from "./Pages/LoginSignup";
 
-export const backend_url = 'http://localhost:4000';
+export const backend_url = 'https://sneaker-website-1.onrender.com';
 export const currency = '$';
 
 function App() {
